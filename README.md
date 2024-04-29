@@ -33,7 +33,19 @@
 ## Appwrite Services
 
 ### 1. Authentication > auth.js
-  - createAccount()
-  - login()
-  - getCurrentUser()
-  - logout()
+
+- createAccount()
+- login()
+- getCurrentUser()
+- logout()
+
+### 2. Database > config.js
+
+- createPost()
+- updatePost()
+- deletePost()
+- getPost()
+- getPosts() > document listing
+- uploadFile()
+- deleteFile()
+- getFilePreview()
