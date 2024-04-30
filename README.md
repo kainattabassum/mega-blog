@@ -49,3 +49,5 @@
 - uploadFile()
 - deleteFile()
 - getFilePreview()
+
+## REDUX/TOOLKIT
