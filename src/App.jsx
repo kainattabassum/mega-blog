@@ -1,18 +1,6 @@
 function App() {
   console.log(import.meta.env.VITE_APPWRITE_URL);
-  return (
-    <div
-      style={{
-        minHeight: "100vh",
-        width: "100%",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-      }}
-    >
-      fjnj
-    </div>
-  );
+  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
 }
 
 export default App;
