@@ -24,14 +24,14 @@ function App() {
 
   // console.log(import.meta.env.VITE_APPWRITE_URL);
   return !loading ? (
-    <div className="min-h-screen w-full flex flex-wrap items-center justify-center">
-      <div className="w-full block">
+    <div className="relative min-h-screen w-full">
+      <div className="pb-[430px]">
         <Header />
         <main>
           <Outlet />
         </main>
-        <Footer />
       </div>
+      <Footer />
     </div>
   ) : null;
 }
