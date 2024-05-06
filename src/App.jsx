@@ -1,8 +1,7 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import authService from "./appwrite/auth";
-import { login, logout } from "./store/authSlice";
-import { Header, Footer } from "./components/index";
+import { Footer, Header } from "./components";
 import { Outlet } from "react-router-dom";
 
 function App() {
@@ -22,13 +21,12 @@ function App() {
       .finally(() => setLoading(false));
   }, []);
 
-  // console.log(import.meta.env.VITE_APPWRITE_URL);
   return !loading ? (
-    <div className="relative min-h-screen w-full">
-      <div className="pb-[430px]">
+    <div className="relative min-h-screen h-full w-full flex flex-col">
+      <div className="grow shrink-0 basis-auto">
         <Header />
         <main>
-          <Outlet />
+          {/* <Outlet /> */}
         </main>
       </div>
       <Footer />
