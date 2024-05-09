@@ -12,36 +12,36 @@
 
 ## .env
 
-> ___CRA (Create React App):___
+> **_CRA (Create React App):_**
 
 1. store variable with UpperCase + REACT_APP initail **REACT_APP_VARIABLE_NAME**
 2. can access with process.env.VARIABLE_NAME
 
-> ___VITE:___
+> **_VITE:_**
 
 1. store variable with UpperCase + VITE initails **VITE_VARIABLE_NAME**
 2. can access with import.meta.env.VARIABLE_NAME
 
-```
-VITE_APPWRITE_URL=""
-VITE_APPWRITE_PROJECT_ID=""
-VITE_APPWRITE_DATABASE_ID=""
-VITE_APPWRITE_COLLECTION_ID=""
-VITE_APPWRITE_BUCKET_ID="" 
-```
-
 ## Appwrite Services
-  
+
 Create project on appwrite: [Link here step by step](https://drive.google.com/drive/folders/1i3zd4R9kPLB1zYA7m4yIBFAaMTS2Ls42?usp=drive_link)
 
-> ___Authentication auth.js___
+```
+VITE_APPWRITE_URL="appwrite-url"
+VITE_APPWRITE_PROJECT_ID="image-3"
+VITE_APPWRITE_DATABASE_ID="image-6"
+VITE_APPWRITE_COLLECTION_ID="image-7"
+VITE_APPWRITE_BUCKET_ID="image=9"
+```
 
-- createAccount()
-- login()
-- getCurrentUser()
-- logout()
+> **_Authentication appwrite/auth.js_**
 
-> ___Database > config.js___
+- createAccount() - [Document](https://appwrite.io/docs/products/auth/email-password#sign-up)
+- login() - [Document](https://appwrite.io/docs/products/auth/email-password#login)
+- getCurrentUser() [Document](https://appwrite.io/docs/references/cloud/client-web/account#get)
+- logout() [Document](https://appwrite.io/docs/references/cloud/client-web/account#deleteSession)
+
+> **_Database > appwrite/config.js_**
 
 - createPost()
 - updatePost()
