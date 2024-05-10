@@ -31,15 +31,17 @@ VITE_APPWRITE_URL="appwrite-url"
 VITE_APPWRITE_PROJECT_ID="image-3"
 VITE_APPWRITE_DATABASE_ID="image-6"
 VITE_APPWRITE_COLLECTION_ID="image-7"
-VITE_APPWRITE_BUCKET_ID="image=9"
+VITE_APPWRITE_BUCKET_ID="image-9"
 ```
 
 > **_Authentication appwrite/auth.js_**
 
-- createAccount() - [Document](https://appwrite.io/docs/products/auth/email-password#sign-up)
-- login() - [Document](https://appwrite.io/docs/products/auth/email-password#login)
-- getCurrentUser() [Document](https://appwrite.io/docs/references/cloud/client-web/account#get)
-- logout() [Document](https://appwrite.io/docs/references/cloud/client-web/account#deleteSession)
+- createAccount()
+- login()
+- getCurrentUser()
+- logout()
+
+[Account API - Document Link](https://appwrite.io/docs/references/cloud/client-web/account)
 
 > **_Database > appwrite/config.js_**
 
@@ -51,5 +53,7 @@ VITE_APPWRITE_BUCKET_ID="image=9"
 - uploadFile()
 - deleteFile()
 - getFilePreview()
+
+[Storage API - Document Link](https://appwrite.io/docs/references/cloud/client-web/storage)
 
 ## REDUX/TOOLKIT
