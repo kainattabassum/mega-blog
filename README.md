@@ -57,4 +57,16 @@ VITE_APPWRITE_BUCKET_ID="image-9"
 [Database API](https://appwrite.io/docs/references/cloud/client-web/databases) - 
 [Storage API](https://appwrite.io/docs/references/cloud/client-web/storage)
 
-## REDUX/TOOLKIT
+## REDUX/TOOLKIT > **_store/store.js_** & **_store/authSlice.js_**
+    1. store.js 
+        ```javascript
+            import { configureStore } from "@reduxjs/toolkit";
+
+            const store = configureStore({
+                reducer: {
+                    //TODO: add more slices here for posts
+                },
+            });
+
+            export default store
+        ```
