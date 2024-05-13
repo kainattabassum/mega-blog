@@ -43,7 +43,7 @@ VITE_APPWRITE_BUCKET_ID="image-9"
 
 [Account API - Document Link](https://appwrite.io/docs/references/cloud/client-web/account)
 
-> **_Database > appwrite/config.js_**
+> **_Database & Storage > appwrite/config.js_**
 
 - createPost()
 - updatePost()
@@ -54,6 +54,7 @@ VITE_APPWRITE_BUCKET_ID="image-9"
 - deleteFile()
 - getFilePreview()
 
-[Storage API - Document Link](https://appwrite.io/docs/references/cloud/client-web/storage)
+[Database API](https://appwrite.io/docs/references/cloud/client-web/databases) - 
+[Storage API](https://appwrite.io/docs/references/cloud/client-web/storage)
 
 ## REDUX/TOOLKIT
