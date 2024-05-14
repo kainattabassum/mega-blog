@@ -1,9 +1,9 @@
 import React from "react";
-import Container from "../container/Container";
+import { Container } from "../index";
 
 function Footer() {
   return (
-    <footer className="relative shrink-0 bg-blueGray-200 pt-8 pb-6 ">
+    <footer className="relative shrink-0 bg-teal-950 pt-8 pb-6">
       <Container>
         <div className="flex flex-wrap text-left lg:text-left">
           <div className="w-full lg:w-6/12 px-4">

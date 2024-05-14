@@ -1,6 +1,6 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
+import { Link, useNavigate } from "react-router-dom";
 import { Logo, Container, LogoutButton } from "../index";
 
 function Header() {
@@ -35,7 +35,7 @@ function Header() {
     },
   ];
   return (
-    <header className="py-3 shadow bg-gray-500">
+    <header className="py-3 shadow bg-teal-950">
       <Container>
         <nav className="flex items-center">
           <div className="mr-4">
@@ -44,13 +44,13 @@ function Header() {
             </Link>
           </div>
 
-          <ul className="flex ml-auto">
+          <ul className="flex ml-auto space-x-2">
             {navItems.map((item) =>
               item.active ? (
-                <li key={item.name}>
+                <li key={item.name} className="group">
                   <button
                     onClick={() => navigate(item.slug)}
-                    className="inline-bock px-6 py-2 duration-200 hover:bg-blue-100 rounded-full"
+                    className="inline-bock px-6 py-2 duration-300 group-hover:bg-teal-100 group-hover:text-teal-950 rounded-full"
                   >
                     {item.name}
                   </button>
