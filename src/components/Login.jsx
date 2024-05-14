@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { login as authLogin } from "../store/authSlice";
 import authService from "../appwrite/auth";
 import { useForm } from "react-hook-form";
-import { Link, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
+import { login as authLogin } from "../store/authSlice";
+import { Link, useNavigate } from "react-router-dom";
 import { Button, InputField, Logo } from "./index";
 
 function Login() {
@@ -18,7 +18,7 @@ function Login() {
       const session = await authService.login(data);
       if (session) {
         const userData = await authService.getCurrentUser();
-        if (userData) dispatch.authLogin(userData);
+        if (userData) dispatch(authLogin(userData));
         navigate("/");
       }
     } catch (error) {
@@ -55,7 +55,7 @@ function Login() {
               label="Email: "
               placeholder="Enter your Email"
               type="email"
-              // compulsory ...register for react-form-hook
+              // compulsory ...register(name, { actions }) for react-form-hook
               {...register("email", {
                 required: true,
                 validate: {
