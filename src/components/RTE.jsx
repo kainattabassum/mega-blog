@@ -7,6 +7,7 @@ export default function RTE({ label, name, control, defaultValue = "" }) {
     <div className="w-full">
       {label && <label className="inline-block mb-1 pl-1">{label}</label>}
 
+      {/* Real Time Editor(RTE) */}
       <Controller
         name={name || "content"}
         control={control}
