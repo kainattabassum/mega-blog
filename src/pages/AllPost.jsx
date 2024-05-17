@@ -2,7 +2,7 @@ import React from 'react'
 
 function AllPost() {
   return (
-    <div>AllPost</div>
+    <div className="w-full py-8">AllPost</div>
   )
 }
 
