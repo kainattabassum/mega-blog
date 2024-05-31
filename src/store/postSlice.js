@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
     name: "",
-    
+    image: ""
 };
 
 const postSlice = createSlice({
